@@ -971,7 +971,7 @@
   function generatePayload() {
     // username format: AADEx####x (random 4 digits)
     const digits = Math.floor(Math.random() * 9000) + 1000; // 1000-9999
-    const username = `AADX${digits}x`;
+    const username = `ROYAL${digits}x`;
 
     // bonusTimes: biased sampling (300-1000 most likely, 1001-10000 very unlikely)
     const bonusTimes = sampleBonusTimes();
@@ -1462,4 +1462,5 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     initOnlineNumberWidget();
   }
+
 });
